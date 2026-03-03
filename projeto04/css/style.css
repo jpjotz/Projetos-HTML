@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+}
+
+p {
+    text-align: justify;
+    border: 2px dotted;
+}
+
+i {
+    color: #0000ff;
+}
+
+span.javascript {
+    font-style: italic;
+    color: #00ff00;
+}
+
+strong {
+    color: #808080;
+}
+
+h1, h2 {
+    color: #363636;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    background-color: #808080;
+    text-align: center;
+}
+
+.rodape {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #808080;
+}
+
+#nome {
+    font-size: 25px;
+    color: #1127a5;
+}
+
+button {
+    border: 5px;
+    border-style: groove;
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.centralizar {
+    text-align: center;
+}
