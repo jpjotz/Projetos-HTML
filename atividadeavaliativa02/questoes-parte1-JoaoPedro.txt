@@ -1,0 +1,56 @@
+Nome: João Pedro do Espírito Santo Ribeiro
+Matrícula: 1A291060821
+
+1- D
+
+2- Um servidor de hospedagem compartilhada é um servidor "centralizado", no qual além do armazenamento em disco, também é utilizado o processamento e memória.
+
+3- E 
+
+4- Uma URL é é um tipo de URI, que identifica e fornece um meio para acessar um recurso. A URL possui um protocolo, nome de dominio, o caminho e opcionalmente, os parâmetros. Uma URI é usado para localizar um recurso na WEB.
+
+5- D
+
+6- HTML, CSS e JavaScript
+
+7- Java, PHP, Kotlin, C#
+
+8- Responsividade se refere aos sites que se adaptam em diferentes tamanhos de tela, sejam telas de notebooks, celulares ou tablets.
+
+9- Mobile-First é uma forma de pensar sobre a experiência do usuário do menor tamanho de tela para o maior.
+
+10- B
+
+11- A
+
+12- E
+
+13- C
+
+14- SERP é o mesmo que Search Engine Result Page, uma página de resultados do mecanismo de pesquisa. É uma resposta da consulta feita a partir de uma palavra chave.
+
+15- E
+
+16- C
+
+17- B
+
+18- A
+
+19- A
+
+20- E
+
+21- B
+
+22- Para de fato centralizar a imagem, ela deve estar envolvida numa tag <figure>, e então no CSS usar o comando text-align: center no seletor header.
+
+23- D
+
+24- D
+
+25- C
+
+26- B
+
+27- C
