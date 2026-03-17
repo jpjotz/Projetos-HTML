@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+
+    <style>
+        .container {
+            font-family: Arial;
+            font-size: 0.8rem;
+            background-color: #87CEEB;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px;
+        }
+
+        p {
+            font-size: 1.8em;
+        }
+
+        h1 {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>INFORMAÇÕES ADICIONAIS</h1>
+
+    <p id="informacoes"></p>
+
+    <footer>
+        <a href="../index.html">Voltar</a>
+    </footer>
+
+    <script>
+        let data = new Date();
+        let informacoes = document.getElementById('informacoes');
+        informacoes.innerHTML =
+        `
+        Data: ${data.toLocaleDateString('pt-br')} </br>
+        Versão: 1.0 </br>
+        Desenvolvedor: Nervoso </br>
+        Contato: Nervoso@meuemail.com </br>
+        Colaboradores: Beltrano e Sicrano
+        `
+    </script>
+</body>
+</html>
