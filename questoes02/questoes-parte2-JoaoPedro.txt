@@ -1,0 +1,68 @@
+Nome: João Pedro do Espírito Santo Ribeiro
+Matrícula: 1A291060821
+
+28 - A
+
+29 - E
+
+30 - E
+
+31 - A
+
+32 - B
+
+33 - A diferença entre as tags <b> e <strong> está relacionada com a semântica. A tag <b> não transmite nenhum significado além do visual, já a tag <strong> é usado para dar ênfase semântica ao conteúdo.
+
+34 - Garante ao navegador que o documento é do tipo HTML, facilitando a renderização e localização por motores de busca.
+
+35 - É um atributo global que ajuda a definir o idioma de um elemento, também facilita a execução dos motores de busca.
+
+36 - É usado para evitar problemas na responsividade do site.
+
+37 - É o corpo de um documento HTML, ou seja, corresponde a todo o conteúdo que será visível no site.
+
+38 - Incorreto.
+
+39 - Seu objetivo é indicar que o conteúdo tem um formato que precisa ser exibido como foi originalmente inserido.
+
+40 - E
+
+41 - D
+
+42 - Sim, porque usar estilizar a tag <p> no css, afeta todos os elementos que levam essa tag.
+
+43 - D
+
+44 - B
+
+45 - A e D
+
+46 - A
+
+47 - A
+
+48 - É o endereço de localhost, usado para usar o próprio computador como servidor de testes para o site.
+
+49 - É um mecanismo de rede, utilizado pelo endereço do localhost, que permite que um dispositivo envie e receba dados para si mesmo.
+
+50 - C
+
+51 - C
+
+52 - B
+
+53 - D
+
+54 - B
+
+55 - E
+
+56 - C
+
+57 - Não
+
+58 - Pois a propriedade border está imcompleta, faltando definir o tipo de borda (solid, dashed, etc) e, além disso, a tag <style> não foi fechada.
+
+59 - D
+
+60 - A
