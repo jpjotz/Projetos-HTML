@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGIÃO SUL</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 10px;
+            border: 0px;
+            overflow: hidden;
+        }
+        body{
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, figure {
+            font-family: Arial;
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            width: 20%;
+        }
+
+        header {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .mapa {
+            padding: 50px 0 50px 0;
+        }
+
+        footer {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding: 50px 0 50px 0;
+        }
+
+    </style>
+</head>
+
+<body background="images/projeto07back.jpg">
+
+    <h1>REGIÃO SUL</h1>
+    <section class="mapa">
+        <figure>
+            <img src="images/projeto07.png" alt="Região Sul" usemap="#mapasul">
+        </figure>
+        <map name="mapasul">
+            <area shape="rect" coords="91,13,166,89" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" alt="pr" title="Informações do Paraná" target="_blank">
+
+            <area shape="circle" coords="94, 173, 45" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" alt="rs" title="Informaççoes do Rio Grande do Sul" target="_blank">
+
+            <area shape="poly" coords="82, 113, 83, 94, 134, 102, 154, 88, 173, 94, 191, 89, 196, 127, 168, 165, 162, 162, 169, 146, 144, 137, 123, 121" href="https://pt/wikipedia.org/wiki/Santa_Catarina" alt="sc" title="Informações de Santa Catarina" target="_blank">
+        </map>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por: <br> BYTA BUG LTDA <br> 6070-6070</p>
+    </footer>
+</body>
+
+</html>

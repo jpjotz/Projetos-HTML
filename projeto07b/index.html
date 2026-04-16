@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            text-align: center;
+        }
+
+        figure {
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid lightgray;
+            max-width: 50%;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        iframe {
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(0, 153, 248);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: rgb(0, 53, 86);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Localização</h1>
+    </header>
+    <figure>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002.198500403169!2d-43.93582974746721!3d-19.943375003166466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c80e9241dd%3A0x585d4ba8ec426262!2sFACE%20-%20Faculdade%20de%20Ci%C3%AAncias%20Empresariais%20-%20R.%20Cobre%2C%20200%20-%20Cruzeiro%2C%20Belo%20Horizonte%20-%20MG%2C%2030310-190!5e0!3m2!1spt-BR!2sbr!4v1774307878931!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </figure>
+
+    <footer>
+        <button  onclick="voltar()">Fechar</button>
+    </footer>
+
+    <script>
+        function voltar() {
+            location.href = '../projeto07/index.html';
+        }
+    </script>
+</body>
+
+
+</html>
