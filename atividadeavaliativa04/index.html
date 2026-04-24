@@ -1,0 +1,89 @@
+<!-- Aluno: João Pedro do Espírito Santo Ribeiro
+Matrícula: A291060821 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+
+        header, footer {
+            font-family: Arial;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #6495ED;
+        }
+
+        .mapa {
+            background-color: #87CEEB;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        .botao {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>REGIÃO CENTRO-OESTE</p>
+    </header>
+
+    <section class="mapa">
+        <figure>
+            <img src="images/atividade04.png" alt="Região Centro-Oeste" usemap="#mapacentrooeste">
+        </figure>
+
+        <map name="mapacentrooeste">
+            <area shape="circle" coords="150,155,75" href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank" title="Informações do Mato Grosso" alt="MT">
+            <area shape="rect" coords="98, 281, 212, 357" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank" title="Informações do Mato Grosso do Sul" alt="MS">
+            <area shape="poly" coords="197, 241, 241, 196, 262, 147, 351, 156, 351, 180, 333, 190, 315, 269, 257, 272, 247, 289, 196, 241" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" target="_blank" title="Informações de Goiás" alt="GO">
+        </map>
+    </section>
+
+    <footer>
+        <p>INFORMAÇÕES DA REGIÃO</p>
+        <p>Selecione o estado</p>
+        <p>Copyright (c) Sites e Sites</p>
+    </footer>
+
+    <section class="botao">
+        <button onclick="mostrarCoords()">Mostrar Coordenadas Usadas</button>
+    </section>
+
+    <br>
+    <p>
+        Aluno:
+        João Pedro do Espírito Santo Ribeiro &nbsp; 
+        ||
+        &nbsp; Matrícula: A291060821 
+    </p>
+
+    <script>
+        function mostrarCoords() {
+            alert("Coordenadas Utilizadas: \n \n" + "Retângulo: 98, 281, 212, 357 \n" + "Círculo: 150,155,75 \n" + "Polígono: 197, 241, 241, 196, 262, 147, 351, 156, 351, 180, 333, 190, 315, 269, 257, 272, 247, 289, 196, 241")
+        }
+    </script>
+</body>
+
+</html>
