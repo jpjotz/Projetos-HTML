@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem</title>
+
+    <style>
+        p, a {
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INFORMAÇÕES ADICIONAIS</h1>
+    </header>
+
+    <p id="infos"></p>
+
+    <a href="index.html">Voltar...</a>
+
+    <script>
+        document.getElementById('infos').innerHTML = `
+        Data: ${new Date().toLocaleDateString('pt-br')} <br>
+        Versão: 1.0 <br>
+        Desenvolvedor: Fulano <br>
+        Contato: fulano@meuemail.com <br>
+        Colaboradores: Beltrano e Sicrano
+        `;
+    </script>
+</body>
+</html>
