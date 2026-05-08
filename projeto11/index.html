@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        table {
+            width: 40%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            font-family: Arial;
+            font-size: 1.1em;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            font-family: Arial;
+            text-align: left;
+            background-color: #154384;
+            color: white;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>ÍNDICE TIOBE</h2>
+        <h3>Linguagens mais usadas (Fevereiro de 2026)</h3>
+        <p>
+            Segundo TIOBE, em 2026, o mundo das linguagens de programação já se encontra em fase de consolidação. As 20
+            principais linguagens usadas ao redor do mundo correspondem atualmente 83,56% do mercado total, segundo
+            TIOBE,
+            um
+            número muito alto, isso porque o mercado está na defensiva, ou seja, está voltado mais para tecnologias que
+            ganharam
+            solidez ao longo dos anos.
+        </p>
+    </header>
+
+    <div id="tabela-container"></div>
+
+    <script>
+        const tabelaHTML = `
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Classificação</th>
+                <th>Nome</th>
+                <th>Percentual</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Python</td>
+                <td>21.81%</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>C</td>
+                <td>11.05%</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>C++</td>
+                <td>8.55%</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Java</td>
+                <td>8.12%</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>C#</td>
+                <td>6.83%</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>JavaScript</td>
+                <td>2.92%</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Visual Basic</td>
+                <td>2.85%</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>R</td>
+                <td>2.19%</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>SQL</td>
+                <td>1.93%</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Delphi/Object Pascal</td>
+                <td>1.88%</td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>PERL</td>
+                <td>1.67%</td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>Fortran</td>
+                <td>1.64%</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td>PHP</td>
+                <td>1.34%</td>
+            </tr>
+
+            <tr>
+                <td>14</td>
+                <td>Rust</td>
+                <td>1.32%</td>
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td>Scratch</td>
+                <td>1.30%</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>Go</td>
+                <td>1.26%</td>
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td>ADA</td>
+                <td>1.14%</td>
+            </tr>
+
+            <tr>
+                <td>18</td>
+                <td>MATLAB</td>
+                <td>1.13%</td>
+            </tr>
+
+            <tr>
+                <td>19</td>
+                <td>Assembly Language</td>
+                <td>1.10%</td>
+            </tr>
+
+            <tr>
+                <td>20</td>
+                <td>Kotlin</td>
+                <td>1.05%</td>
+            </tr>
+        </tbody>
+    </table>
+        `;
+
+        document.getElementById("tabela-container").innerHTML = tabelaHTML;
+    </script>
+
+    <br>
+
+    <footer>
+        <h4>SOBRE A TIOBE</h4>
+        <p>
+            A TIOBE é uma organização voltada para a qualidade de software. A TIOBE é responsável em verificar mais de 1
+            bilhão
+            de linhas de código de software diários para seus clientes ao redor do mundo. A TIOBE foi fundada em 1º de
+            outubro
+            de 2000 por Paul Jansen. O nome TIOBE significa The Importance Of Being Earnest, "A Importância de Ser
+            Sincero".
+            Esta frase é também é o nome de uma peça escrita por Oscar Wilde no final do século XIX.
+        </p>
+        <p>Click aqui para acessar TIOBE Index: <a href="https://www.tiobe.com/tiobe-index/" target="_blank">TIOBE
+                Index</a></p>
+    </footer>
+</body>
+
+</html>
