@@ -1,0 +1,73 @@
+<!-- Aluno: João Pedro do Espírito Santo Ribeiro
+    Matrícula: A291060821 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias vividos</title>
+    <link rel="shortcut icon" href="icons/clock.ico" type="image/x-icon">
+    <style>
+        #resultado {
+            display: block;
+            font-size: clamp(12px, 3vw, 18px);
+            color: #9c3912;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Dias vividos</h2>
+
+    <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome">
+    </p>
+
+    <p>
+        <label for="idade">Idade:</label>
+        <input type="number" size="7" id="idade" placeholder="Digite a idade atual (inteiro)">
+    </p>
+
+    <button onclick="calcular()" title="Calcular a quantidade de dias vividos">Calcular</button>
+    <button onclick="fechar()" title="Fechar essa página">Fechar</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById('idade').value;
+
+            let diasVividos = Math.round(idade * 365.2425);
+
+            let resultadoDiv = document.getElementById('resultado');
+
+            let mensagem = ``
+
+            if(idade <= 17) {
+                mensagem = "Aprendiz";
+            } else if(idade <= 25) {
+                mensagem = "Estagiário";
+            } else {
+                mensagem = "Profissional";
+            }
+
+            resultadoDiv.innerHTML = `
+            <p><b>Olá </b> ${nome}<b>, você viveu aproximadamente:
+                </b>${diasVividos}<b> dias</b></p> <p>${mensagem}</p>`;
+        }
+
+        function fechar() {
+            window.close();
+        }
+    </script>
+</body>
+
+<p>Aluno: João Pedro do Espírito Santo Ribeiro ||
+    Matrícula: A291060821
+</p>
+
+</html>
