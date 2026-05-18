@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    border: 2px;
+    border-style: groove;
+}
+
+.listaordenada {
+    margin-left: 10px;
+}
+
+#alternar {
+    display: none;
+}
+
+#alternar:checked~.opcoes {
+    display: block;
+}
+
+.hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.opcoes {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(128, 128, 128, 0.8);
+    width: 100%;
+    top: 50px;
+    left: 0;
+    position: fixed;
+}
+
+.opcoes li a {
+    display: block;
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.separador {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    font-size: 20px;
+}
