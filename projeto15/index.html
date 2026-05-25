@@ -1,0 +1,164 @@
+<!-- Nome: João Pedro do Espírito Santo Ribeiro -->
+<!-- Matrícula: A291060821 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listeners</title>
+
+    <style>
+        body {
+            background-color: #87ceeb;
+        }
+
+        #corClassificacaoCartao,
+        #corSalarioLiquido {
+            color: #9c3912;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        h2,
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #463e3e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Salário Líquido e Classificação de Cartão</h2>
+
+    <label for="salarioBruto">Salário Bruto:</label>
+    <input type="number" step="100" id="salarioBruto" placeholder="Digite o salário bruto">
+
+    <br>
+
+    <label for="descontos">Descontos:</label>
+    <input type="number" step="100" id="descontos" placeholder="Digite o valor dos descontos">
+
+    <br>
+
+    <label for="comissao">Comissao:</label>
+    <input step="100" type="number" id="comissao" placeholder="Digite o valor da comissão">
+
+    <br>
+
+    <button id="btncalcular">Calcular</button>
+    <button id="btnclassificar">Classificar</button>
+    <button id="btnsimular">Simular</button>
+    <button id="btnfechar">Fechar</button>
+
+    <h3 id="corSalarioLiquido">Salário Líquido:
+        <span id="salarioLiquido"></span>
+    </h3>
+
+    <h3 id="corClassificacaoCartao">Classificação do Cartão:
+        <span id="classificacaoCartao"></span>
+    </h3>
+</body>
+
+<script>
+    let salarioBruto = 0.0;
+    let salarioLiquido = 0.0;
+    let descontos = 0.0;
+    let comissao = 0.0;
+    let calcular = document.getElementById('btncalcular');
+    let classificar = document.getElementById('btnclassificar');
+    let calculouSalario = false;
+    let classificacaoCartao = document.getElementById('classificacaoCartao');
+    let fechar = document.getElementById('btnfechar');
+    let simular = document.getElementById('btnsimular');
+
+    calcular.addEventListener('click', () => {
+        salarioBruto = parseFloat(document.getElementById('salarioBruto').value || 0);
+
+        descontos = parseFloat(document.getElementById('descontos').value || 0);
+
+        comissao = parseFloat(document.getElementById('comissao').value || 0);
+
+        salarioLiquido = salarioBruto - descontos + comissao;
+        calculouSalario = true;
+
+        document.getElementById('salarioLiquido').textContent = salarioLiquido.toFixed(2);
+    });
+
+    classificar.addEventListener('click', () => {
+        if (!calculouSalario) {
+            alert('O cálculo do salário deve ser processado!');
+            return;
+        }
+
+        if (salarioLiquido < 8000) {
+            classificacaoCartao.textContent = "Cartão Bronze"
+        } else if (salarioLiquido < 15000) {
+            classificacaoCartao.textContent = "Cartão Prata";
+        } else {
+            classificacaoCartao.textContent = "Cartão Ouro";
+        }
+    });
+
+    simular.addEventListener('click', () => {
+
+        if (!calculouSalario || salarioBruto <= 0) {
+            alert('O cálculo do salário deve ser processado!');
+            return;
+        }
+
+        let percentualDeAumento = parseFloat(
+            prompt('Informe o percentual de aumento (Exemplo: 30 para 30%)')
+        );
+
+        if (isNaN(percentualDeAumento) || percentualDeAumento <= 0) {
+            alert('O valor informado não é válido');
+            return;
+        }
+
+        let novoSalarioBrutoValor =
+            salarioBruto + (salarioBruto * percentualDeAumento / 100);
+
+        let novoSalarioLiquidoValor =
+            novoSalarioBrutoValor - descontos + comissao;
+
+        let novoSalarioBruto = novoSalarioBrutoValor.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+
+        let novoSalarioLiquido = novoSalarioLiquidoValor.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+
+        alert(
+            `SIMULAÇÃO DO NOVO SALÁRIO
+
+Novo salário bruto: ${novoSalarioBruto}
+
+Novo salário líquido: ${novoSalarioLiquido}`
+        );
+    });
+
+    fechar.addEventListener('click', () => {
+        window.close();
+    });
+
+</script>
+
+<p>Nome: João Pedro do Espírito Santo Ribeiro || Matrícula: A291060821</p>
+
+</html>
